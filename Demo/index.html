@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View1</title>
+    <style>
+    	body{ font-family: Calibri, Verdana; }
+    	h1{ font-size:50px; }
+    	h2{ font-size:30px; }
+    	p{ font-size:20px; }
+    	.wrapper{width:50%; float:left;}
+    	.wrapperInner{width:70%; border:1px solid #555; padding:5% 14%; margin: 0 auto;}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    	<div class="wrapperInner">
+	    	<h1 class="squishyText">This a squishy heading. It has responsive font size.</h1>
+	    </div>
+		<div class="wrapperInner">
+	    	<h2 class="squishyText">This is some  awesome responsive bacon-ipsum</h2>
+	        <p class="squishyText">
+	        	Doner hamburger cow jerky. Ham pork loin pastrami andouille spare ribs, corned beef meatloaf ball tip pork chop. Ball tip biltong meatball rump ground round, ham hock boudin pork turducken. Ball tip doner fatback pork chop flank, meatball shankle shank. Capicola beef tenderloin, sausage shank leberkas spare ribs rump ham hock chuck pastrami venison pork chop drumstick brisket. Boudin frankfurter beef ribs tail turducken. Capicola cow pork loin flank chuck pork chop hamburger tail turducken.
+	        </p>
+	    </div>
+    </div>
+    <div class="wrapper">
+    	<div class="wrapperInner">
+	        <h1>This a normal heading. It will wrap when shrunk.</h1>
+	    </div>
+	    <div class="wrapperInner">
+	    	<h2>This is some lame non-responsive hipster-ipsum</h2>
+	        <p>
+	        	Occupy master cleanse Shoreditch, fingerstache mlkshk iPhone direct trade single-origin coffee messenger bag pickled PBR&B cred Tumblr. Kitsch Williamsburg Etsy, mumblecore lomo fixie direct trade Banksy. Cray keffiyeh chambray craft beer fashion axe Austin. Before they sold out cornhole American Apparel, Vice Tumblr Marfa PBR put a bird on it chillwave try-hard slow-carb hashtag drinking vinegar ethnic organic. IPhone polaroid chia 3 wolf moon, master cleanse selfies squid.
+	        </p>
+	    </div>
+	</div>
+</body>
+
+<script src="jquery-1.10.2.min.js"></script>
+<script src="squishy.min.js"></script>
+<script>
+	$(document).ready(function() {
+		squishy.init(1440);
+	});
+</script>
+
+</html>
